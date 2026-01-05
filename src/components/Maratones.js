@@ -51,6 +51,7 @@ const marathonsData = [
     title: "Berlín Marathon 2025",
     date: "Septiembre 2025",
     image: "berlin_logo.svg",
+    extraImage: "World-Marathon-Majors.jpg",
   },
 ];
 
@@ -58,16 +59,12 @@ const Maratones = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const carouselRef = useRef(null);
 
-  // CONFIGURACIÓN EXACTA DEL CSS
-  // Ancho de tarjeta (348px) + Margin Right (30px) = 378px
   const CARD_WIDTH_WITH_GAP = 378; 
 
-  // Duplicamos x3 para asegurar que nunca falten tarjetas en pantallas ultra-anchas
   const loopedMarathons = useMemo(() => {
     return [...marathonsData, ...marathonsData, ...marathonsData];
   }, []);
 
-  // Calculamos el ancho de SOLO EL SET ORIGINAL para saber cuándo reiniciar el loop
   const singleSetWidth = marathonsData.length * CARD_WIDTH_WITH_GAP;
 
   useEffect(() => {
@@ -91,7 +88,6 @@ const Maratones = () => {
       <h2>Maratones</h2>
       <p>Maratones en los que he participado</p>
 
-      {/* El ref va aquí para controlar el ancho contenedor */}
       <div className="carousel-container fade-mask" ref={carouselRef}>
         <div className={`maratones-carousel ${isMobile ? "swipe-enabled" : ""}`}>
           {isMobile ? (
@@ -115,15 +111,11 @@ const Maratones = () => {
           ) : (
             <motion.div
               className="maratones-inner infinite-scroll"
-              // LA MAGIA DEL LOOP:
-              // Nos movemos desde 0 hasta el negativo del ancho de UN solo set.
-              // Al llegar ahí, Framer Motion reinicia instantáneamente a 0.
-              // Como el segundo set es idéntico al primero, el ojo humano no ve el salto.
               animate={{ x: [0, -singleSetWidth] }}
               transition={{
                 repeat: Infinity,
                 ease: "linear",
-                duration: 35, // Ajusta la velocidad aquí
+                duration: 35,
               }}
             >
               {loopedMarathons.map((marathon, index) => (
