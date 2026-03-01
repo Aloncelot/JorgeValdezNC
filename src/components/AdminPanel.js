@@ -188,7 +188,7 @@ const AdminPanel = () => {
                     </div>
 
                     <div className="card-body">
-                      <p>"{review.comment}"</p>
+                      <p>&quot;{review.comment}&quot;</p>
                     </div>
 
                     <div className="card-actions">

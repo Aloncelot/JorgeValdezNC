@@ -71,21 +71,21 @@ const Contact = () => {
   const locations = [
     {
       title: "Hospital Star Médica Luna Parc",
-      mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3758.307968779679!2d-99.2155496240217!3d19.664279834857644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21f8a8507c08b%3A0x6295570085816960!2sStar%20M%C3%A9dica%20Luna%20Parc!5e0!3m2!1ses-419!2smx!4v1709500000000!5m2!1ses-419!2smx", 
+      mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.2877094961746!2d-99.21322532405416!3d19.657727133451438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21e3669cad269%3A0xdb9ee0f3be58b530!2sHospital%20Star%20M%C3%A9dica%20Luna%20Parc!5e0!3m2!1ses-419!2smx!4v1772164989723!5m2!1ses-419!2smx", 
       logoSrc: "LogoStarMedica2.png", // Asegúrate que esta ruta sea correcta en tu carpeta public
-      address: "Cons. 1418 Piso 14, Av. Primero de Mayo s/n. Col. Centro Urbano, Cuautitlán Izcalli."
+      address: "Av. Primero de Mayo s/n. Col. Centro Urbano, Cuautitlán Izcalli. Consultorio 1418 Piso 14"
     },
     {
-      title: "Hospital San José Satélite",
-      mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.893666205267!2d-99.23769182402434!3d19.50821633842146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d20320a1ce2b99%3A0xe50e50338a0f5d54!2sHospital%20San%20Jos%C3%A9%20Sat%C3%A9lite!5e0!3m2!1ses-419!2smx!4v1709500000000!5m2!1ses-419!2smx",
-      logoSrc: "rzs-UIxN_400x400.jpg",
-      address: "Circuito Circunvalación Poniente No. 53, Cd. Satélite, Naucalpan de Juárez."
+      title: "Hospital Star Médica Tlalnepantla",
+      mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60161.6169979666!2d-99.28155630826953!3d19.537274256247787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21dae2a60a465%3A0xd8d0e8a8fa4a5162!2sHospital%20Star%20M%C3%A9dica%20Tlalnepantla!5e0!3m2!1ses-419!2smx!4v1772164602588!5m2!1ses-419!2smx",
+      logoSrc: "LogoStarMedica2.png",
+      address: "Av Sor Juana Inés de La Cruz 280, Fracc. Industrial, San Lorenzo, 54033 Tlalnepantla, Méx. Consultorio 903"
     },
     {
       title: "Hospital Angeles Mocel",
-      mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.687258079255!2d-99.18739562402613!3d19.41406893966555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff5b1725b42d%3A0x86842742d4835824!2sHospital%20Angeles%20Mocel!5e0!3m2!1ses-419!2smx!4v1709500000000!5m2!1ses-419!2smx",
+      mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.0339371638706!2d-99.1847803!3d19.410939600000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff5e9cb14657%3A0xed4a8855e9a5502f!2sHospital%20Angeles%20Mocel!5e0!3m2!1ses-419!2smx!4v1772165041457!5m2!1ses-419!2smx",
       logoSrc: "HAM.png",
-      address: "Torre Médica Mocel, Gelati 33, Consultorio 202. San Miguel Chapultepec."
+      address: "Torre Médica Mocel, Gelati 33, San Miguel Chapultepec. Consultorio 202"
     },
   ];
 
