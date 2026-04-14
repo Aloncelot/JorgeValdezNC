@@ -1,7 +1,8 @@
 import React from "react";
 import "./Footer.css";
-import { FaFacebookF, FaWhatsapp, FaPhoneAlt, FaEnvelope, FaLock } from "react-icons/fa";
-import { Link } from "react-router-dom" ;
+// Añadimos FaTerminal para el sello de Quasar Devs
+import { FaFacebookF, FaWhatsapp, FaPhoneAlt, FaEnvelope, FaLock, FaTerminal } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
 
 const Footer = () => {
@@ -55,11 +56,24 @@ const Footer = () => {
           <p>
             &copy; {currentYear} Jorge Valdez Rivera N.C. Todos los derechos reservados.
           </p>
-          
-          <Link to="/admin-login" className="admin-link-discrete">
-            <FaLock style={{ marginRight: "5px", fontSize: "0.8em" }} /> 
-            Admin
-          </Link>
+
+          <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+            <a 
+              href="https://quasar-devs.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="admin-link-discrete"
+              style={{ display: 'flex', alignItems: 'center', gap: '5px' }}
+            >
+              <FaTerminal style={{ fontSize: "0.9em" }} />
+              Built by QUASAR DEVS
+            </a>
+
+            <Link to="/admin-login" className="admin-link-discrete">
+              <FaLock style={{ marginRight: "5px", fontSize: "0.8em" }} /> 
+              Admin
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
